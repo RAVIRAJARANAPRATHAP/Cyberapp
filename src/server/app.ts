@@ -86,8 +86,10 @@ setInterval(() => {
 
 const SUPPORTED_LANGUAGES = new Set(['en', 'hi', 'te', 'ta', 'mr', 'bn']);
 
-// ── API Routes ───────────────────────────────────────────────────────────────
-app.get('/api/health', (req, res) => {
+// ── API Router (Mounted on both /api and /) ──────────────────────────────────
+const apiRouter = express.Router();
+
+apiRouter.get('/health', (req, res) => {
   const hasKey = Boolean(process.env.GEMINI_API_KEY && process.env.GEMINI_API_KEY.trim());
   const isDemo = process.env.DEMO_MODE === '1' || !hasKey;
 
@@ -99,7 +101,7 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-app.get('/api/knowledge-base', (req, res) => {
+apiRouter.get('/knowledge-base', (req, res) => {
   res.json({
     count: KNOWLEDGE_BASE.length,
     documents: KNOWLEDGE_BASE.map(d => ({
@@ -111,9 +113,9 @@ app.get('/api/knowledge-base', (req, res) => {
   });
 });
 
-app.post('/api/check', rateLimiter, async (req, res) => {
+apiRouter.post('/check', rateLimiter, async (req, res) => {
   try {
-    const { query, language } = req.body;
+    const { query, language } = req.body || {};
     if (!query || typeof query !== 'string' || !query.trim()) {
       res.status(400).json({ error: 'Query parameter is required and cannot be empty' });
       return;
@@ -132,16 +134,17 @@ app.post('/api/check', rateLimiter, async (req, res) => {
     const result = await runAgent(trimmedQuery, apiKey, isDemoMode, sanitizedLang);
     res.json({ ok: true, data: result });
   } catch (error: any) {
-    console.error('[API Error /api/check]:', error?.message || error);
+    console.error('[API Error /check]:', error?.message || error);
     res.status(500).json({
       error: 'An error occurred while evaluating the query. Please retry or consult 1930.',
+      details: error?.message || String(error),
     });
   }
 });
 
-app.post('/api/inspect-link', rateLimiter, async (req, res) => {
+apiRouter.post('/inspect-link', rateLimiter, async (req, res) => {
   try {
-    const { url, language } = req.body;
+    const { url, language } = req.body || {};
     if (!url || typeof url !== 'string' || !url.trim()) {
       res.status(400).json({ error: 'URL is required and cannot be empty' });
       return;
@@ -160,11 +163,16 @@ app.post('/api/inspect-link', rateLimiter, async (req, res) => {
     const result = await inspectLink(trimmedUrl, apiKey, isDemoMode, safeLanguage);
     res.json({ ok: true, data: result });
   } catch (error: any) {
-    console.error('[API Error /api/inspect-link]:', error?.message || error);
+    console.error('[API Error /inspect-link]:', error?.message || error);
     res.status(500).json({
       error: 'An error occurred while inspecting the link. Please verify independently.',
+      details: error?.message || String(error),
     });
   }
 });
+
+// Mount router on both /api and root /
+app.use('/api', apiRouter);
+app.use('/', apiRouter);
 
 export default app;

@@ -24,6 +24,7 @@ import { AppSidebar } from './components/AppSidebar.tsx';
 import { ResultCard } from './components/ResultCard.tsx';
 import { copyToClipboard } from './utils/clipboard.ts';
 import { TRANSLATIONS } from './i18n/translations.ts';
+import { evaluateLocally } from './utils/clientSafetyEngine.ts';
 
 export default function App() {
   const [input, setInput] = useState('');
@@ -96,34 +97,60 @@ export default function App() {
     setErrorMessage(null);
 
     try {
-      const response = await fetch('/api/check', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query: trimmed, language: selectedLanguage }),
-      });
+      let analysisResult: any = null;
 
-      let resData: any = {};
       try {
-        resData = await response.json();
-      } catch {
-        throw new Error('Server returned an invalid response format.');
+        const response = await fetch('/api/check', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ query: trimmed, language: selectedLanguage }),
+        });
+
+        const responseText = await response.text();
+        if (response.ok) {
+          try {
+            const resData = JSON.parse(responseText);
+            if (resData.ok && resData.data) {
+              analysisResult = resData.data;
+            }
+          } catch {
+            // Non-JSON response, fallback to local engine
+            console.warn('[CyberRakshak] Non-JSON response from server, engaging local defense engine');
+          }
+        }
+      } catch (networkErr) {
+        console.warn('[CyberRakshak] Server unreachable, engaging local defense engine:', networkErr);
       }
 
-      if (response.ok && resData.ok && resData.data) {
+      // If server could not provide analysis, use instant in-browser sovereign engine
+      if (!analysisResult) {
+        analysisResult = evaluateLocally(trimmed, selectedLanguage);
+      }
+
+      const newItem: HistoryItem = {
+        id: `${Date.now()}-${Math.random().toString(36).substring(2, 7)}`,
+        user_msg: analysisResult.input_scrubbed || trimmed,
+        result: analysisResult,
+        timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+      };
+      setHistory(prev => [newItem, ...prev]);
+      setInput('');
+    } catch (err: any) {
+      console.error('[CyberRakshak] Unexpected error analyzing message:', err);
+      // Even in the worst case, provide local fallback
+      try {
+        const fallbackResult = evaluateLocally(trimmed, selectedLanguage);
         const newItem: HistoryItem = {
           id: `${Date.now()}-${Math.random().toString(36).substring(2, 7)}`,
-          user_msg: resData.data.input_scrubbed || trimmed,
-          result: resData.data,
+          user_msg: fallbackResult.input_scrubbed || trimmed,
+          result: fallbackResult,
           timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
         };
         setHistory(prev => [newItem, ...prev]);
         setInput('');
-      } else {
-        setErrorMessage(resData.error || 'Failed to analyze the description. Please try again or call 1930.');
+      } catch {
+        setErrorMessage('Unable to complete safety check. Please contact 1930 immediately if you suspect fraud.');
       }
-    } catch (err: any) {
-      console.error('[CyberRakshak] Error analyzing message:', err);
-      setErrorMessage(err?.message || 'Network connection error. Please verify your connection and retry.');
     } finally {
       setLoading(false);
     }

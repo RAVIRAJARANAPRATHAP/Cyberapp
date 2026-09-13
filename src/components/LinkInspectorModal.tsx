@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import { SupportedLanguage } from '../types.ts';
 import { MODAL_TRANSLATIONS } from '../i18n/modalTranslations.ts';
+import { inspectLinkLocally } from '../utils/clientSafetyEngine.ts';
 
 interface LinkInspectorOutput {
   url: string;
@@ -78,15 +79,19 @@ export const LinkInspectorModal: React.FC<LinkInspectorModalProps> = ({
         body: JSON.stringify({ url: targetUrl.trim(), language }),
       });
 
+      const resText = await res.text();
       let data: any = {};
       try {
-        data = await res.json();
+        data = JSON.parse(resText);
       } catch {
+        if (!res.ok) {
+          throw new Error(`Server returned HTTP ${res.status} (${res.statusText || 'Error'}). Please check backend configuration.`);
+        }
         throw new Error('Received unexpected non-JSON response from server.');
       }
 
       if (!res.ok) {
-        throw new Error(data.error || 'Inspection failed. Please try again.');
+        throw new Error(data.error || data.details || 'Inspection failed. Please try again.');
       }
       setResult(data.data);
     } catch (err: any) {

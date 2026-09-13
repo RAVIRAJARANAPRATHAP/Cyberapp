@@ -2,11 +2,23 @@
   "version": 2,
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "/api/index"
+      "source": "/api/check",
+      "destination": "/api/check"
     },
     {
-      "source": "/((?!api/.*).*)",
+      "source": "/api/inspect-link",
+      "destination": "/api/inspect-link"
+    },
+    {
+      "source": "/api/health",
+      "destination": "/api/health"
+    },
+    {
+      "source": "/api/knowledge-base",
+      "destination": "/api/knowledge-base"
+    },
+    {
+      "source": "/((?!api/).*)",
       "destination": "/index.html"
     }
   ]
