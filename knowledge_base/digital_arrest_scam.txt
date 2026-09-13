@@ -1,0 +1,56 @@
+SCAM TYPE: Digital Arrest Scam
+
+HOW IT WORKS:
+Fraudsters call or video-call the victim while impersonating police officers, CBI agents,
+customs officials, or telecom authority (TRAI/DoT) representatives. They claim that the
+victim's phone number, Aadhaar card, or a courier parcel has been linked to a serious
+crime such as drug trafficking, money laundering, or illegal SIM misuse.
+
+The caller then orders the victim to stay on a live video call without disconnecting —
+this enforced isolation is what they falsely call a "digital arrest." During this period,
+the victim is shown fabricated "arrest warrants," official-looking seals, and sometimes
+a staged "police station" background. The fraudsters demand an immediate payment of a
+"clearance fee," "bail deposit," or "verification charge" to avoid being physically
+arrested. Victims are threatened that any disconnection or call to family will result in
+immediate arrest.
+
+TYPICAL SCRIPT USED:
+"Your Aadhaar has been used to open a bank account involved in money laundering. You are
+under digital arrest. Do not disconnect this call or we will send officers to your home.
+To get a stay order you must transfer Rs. X immediately to this account."
+
+RED FLAGS:
+- No law in India allows arrest via a phone or video call — "digital arrest" is not a
+  legal term or procedure in Indian law.
+- Real police, CBI, ED, or TRAI officials never demand money over the phone to "clear"
+  your name.
+- Genuine law enforcement agencies contact people through official letters or physical
+  presence, not WhatsApp or random calls.
+- Pressure to stay on call continuously and not contact family is a control tactic, not
+  a legal requirement.
+- Official-looking documents shown on video can be easily fabricated using free tools.
+- Urgency and fear of "immediate arrest" are deliberate manipulation techniques.
+
+WHAT TO DO:
+- Hang up immediately, no matter how convincing the caller sounds.
+- Do not share OTP, Aadhaar number, bank account details, or any personal information.
+- Do not transfer any money, even a small "verification" amount.
+- Disconnect the call and reach out to a trusted family member or friend.
+- Verify independently: call your nearest official police station directly using a number
+  you look up yourself (not one the caller gives you).
+- Remember: the moment you feel afraid and pressured, that itself is the biggest red flag.
+
+WHERE TO REPORT:
+- National Cybercrime Helpline: 1930 (call, available 24x7)
+- Report online at: cybercrime.gov.in
+- You can also report to your nearest police station.
+- If money was transferred, call your bank immediately to request a transaction freeze.
+
+REAL EXAMPLES:
+- In 2024, a retired government employee in Noida lost Rs. 11 lakh after being kept on a
+  WhatsApp video call for 36 hours under the pretext of a "digital arrest."
+- India's Prime Minister publicly warned citizens about this scam in his Mann Ki Baat
+  address in October 2024.
+
+SOURCE: I4C (Indian Cyber Crime Coordination Centre) public advisory and MHA press
+releases (summarized in own words).

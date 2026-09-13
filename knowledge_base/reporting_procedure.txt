@@ -1,0 +1,85 @@
+DOCUMENT: How to Report Cybercrime in India
+
+This document explains what to do immediately after a cybercrime, how to report it, and
+what information to keep ready. Keep this information somewhere accessible.
+
+---
+
+STEP 1 — ACT IMMEDIATELY IF MONEY WAS TRANSFERRED
+
+Time is critical. If you or someone you know has transferred money to a fraudster:
+
+1. Call your bank's 24x7 fraud helpline right away and say: "I have been the victim of
+   a cyber fraud and I want to freeze the fraudulent transaction."
+   - SBI: 1800-11-2211
+   - HDFC: 1800-202-6161
+   - ICICI: 1800-1080
+   - Other banks: the number is printed on the back of your debit card.
+
+2. Call the National Cybercrime Helpline: 1930
+   This helpline is available 24 hours a day, 7 days a week. Tell the operator what
+   happened and they will guide you on next steps. The earlier you call, the better the
+   chance of the transaction being reversed.
+
+---
+
+STEP 2 — FILE AN ONLINE COMPLAINT
+
+Visit: cybercrime.gov.in
+Click "File a Complaint" and select the relevant category:
+- Financial Fraud / Online Financial Fraud
+- Cyber Blackmail / Threatening
+- Other Cyber Crimes
+
+You will need to create a free account to file the complaint. The process takes about
+10–15 minutes. You will receive a complaint number that you can use to track progress.
+
+---
+
+STEP 3 — FILE A LOCAL POLICE COMPLAINT
+
+Visit your nearest police station and ask to file an FIR (First Information Report) for
+cybercrime. Many states also have dedicated Cybercrime Police Stations in district
+headquarters.
+
+Keep a copy of the FIR acknowledgment for your records.
+
+---
+
+WHAT INFORMATION TO KEEP READY BEFORE REPORTING
+
+Collect and save the following before making the complaint — do not delete any messages
+or call records:
+
+- Date, time, and duration of the fraudulent call/message
+- Phone number(s) used by the fraudster (even if it appears to be a known number)
+- Screenshots of any WhatsApp messages, SMS, or chat conversations
+- Screenshots of any fake websites or apps shown to you
+- Bank transaction details: amount, date, and the UPI ID / account number money was
+  sent to
+- Any names, "badge numbers," or "employee IDs" the fraudster mentioned
+- The app name if you were asked to install anything (AnyDesk, Quick Support, etc.)
+
+---
+
+OTHER USEFUL CONTACTS
+
+- PM Cyber Safety Awareness: stay updated at cyberdost.mha.gov.in
+- Report SMS spam / fraudulent numbers to the telecom regulator: sancharsaathi.gov.in
+- SEBI (for investment fraud): scores.gov.in | 1800-22-7575
+- RBI (for banking fraud): rbi.org.in complaint portal | 14440
+
+---
+
+IMPORTANT REMINDERS
+
+- No government agency charges a fee over the phone.
+- No bank asks for OTP, CVV, or passwords — ever.
+- "Digital arrest" is not a real legal concept in India.
+- Reporting quickly is the single most important thing you can do.
+
+National Cybercrime Helpline: 1930
+Online Portal: cybercrime.gov.in
+
+SOURCE: cybercrime.gov.in official reporting guidelines, MHA/I4C instructions, and RBI
+safe-banking guidelines (summarized in own words).

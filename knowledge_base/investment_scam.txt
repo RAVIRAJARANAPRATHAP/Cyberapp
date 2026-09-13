@@ -1,0 +1,55 @@
+SCAM TYPE: Fake Investment / Stock-Tip Scam
+
+HOW IT WORKS:
+Victims are added without consent to WhatsApp groups, Telegram channels, or contacted on
+social media by people claiming to be SEBI-registered advisors, stock market experts, or
+representatives of well-known broking firms (like Zerodha, Angel One, etc.). Sometimes
+they use the name and photo of a real celebrity or financial personality to appear
+credible.
+
+The fraudsters begin by sharing a few "free tips" that appear to be accurate — these
+early tips are fabricated to build trust, not real market insight. Once trust is
+established, they introduce a "private high-return investment opportunity" — typically a
+fake trading app, a fraudulent website, or an unregistered scheme promising guaranteed
+monthly returns of 20–50%.
+
+Victims are asked to deposit money into the platform. Initially, the dashboard shows
+large profits to encourage further investment. When the victim tries to withdraw, they
+are told to pay additional "taxes," "TDS charges," or "account unblocking fees" before
+release of funds. The money is never returned and the fraudsters eventually disappear.
+
+TYPICAL SCRIPT USED:
+"I am a SEBI-certified analyst. Our exclusive group has made 300% returns this year.
+Invest just Rs. 10,000 and we guarantee Rs. 50,000 in 30 days. Limited spots available."
+
+RED FLAGS:
+- SEBI-registered advisors are prohibited by law from guaranteeing any fixed return on
+  investment. Anyone who guarantees profits is either lying or operating illegally.
+- Legitimate investment platforms are registered and regulated — always check SEBI's
+  official intermediary list at sebi.gov.in before investing.
+- Unsolicited additions to "investment tip" WhatsApp or Telegram groups are a classic
+  fraud setup.
+- Fake apps and websites often have no SEBI registration number, or show a number that
+  does not match the SEBI registry.
+- Being asked to pay a fee to "unlock" your own profits or "clear taxes" before
+  withdrawal is a clear sign the platform is fraudulent.
+- High-pressure language — "offer closes tonight," "only 5 spots left" — is
+  manipulation, not legitimate sales.
+
+WHAT TO DO:
+- Never invest in platforms or schemes suggested by someone who contacted you out of the
+  blue, especially on WhatsApp or Telegram.
+- Verify any advisor's SEBI registration number on sebi.gov.in before committing money.
+- Do not pay any additional fee to "release" money you have already invested — you will
+  not recover it by paying more.
+- If you have already invested, stop sending money immediately, save all chat records and
+  screenshots, and report right away.
+
+WHERE TO REPORT:
+- National Cybercrime Helpline: 1930 (call, available 24x7)
+- Report online at: cybercrime.gov.in
+- SEBI's SCORES portal for investment fraud: scores.gov.in
+- Inform your bank to flag any transactions made to the fraudulent platform.
+
+SOURCE: SEBI investor awareness materials and I4C cybercrime advisories (summarized in
+own words).

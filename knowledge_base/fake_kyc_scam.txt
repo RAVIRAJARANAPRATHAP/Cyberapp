@@ -1,0 +1,54 @@
+SCAM TYPE: Fake KYC Update Scam (Bank / SMS / Phone Call)
+
+HOW IT WORKS:
+Victims receive an SMS, WhatsApp message, or phone call claiming that their bank account,
+UPI ID, or mobile wallet (Paytm, PhonePe, etc.) will be blocked or suspended unless they
+immediately complete a "KYC update." The message often contains a phone number to call or
+a link to click.
+
+When the victim calls back, a fake "bank executive" or "RBI officer" asks them to share
+their account number, debit card number, CVV, OTP, or to download a remote-access app
+(like AnyDesk, TeamViewer, or Quick Support) to "assist" with the update. Once the
+remote-access app is installed, the fraudster silently transfers money from the victim's
+account while pretending to help.
+
+In the SMS/link variant, the link leads to a phishing website that looks identical to the
+victim's bank's login page. Any credentials entered are captured by the fraudster.
+
+TYPICAL SCRIPT USED (phone version):
+"This is [Bank Name] customer care. Your KYC is incomplete and your account will be
+blocked in 24 hours. Please share your OTP to complete the update."
+
+TYPICAL SMS TEXT:
+"Dear customer, your [Bank] account KYC is expired. Your account will be suspended.
+Update now: [fake link]"
+
+RED FLAGS:
+- Real banks never ask for OTP, CVV, or full card number over the phone or via a link —
+  ever. This is a hard rule with no exceptions.
+- KYC updates are done in person at the branch or through the bank's official app/website
+  that you navigate to yourself (not through a link someone sends you).
+- Any message creating urgency ("blocked in 24 hours," "immediate action required") is
+  a pressure tactic.
+- The RBI has repeatedly stated it never contacts individual customers directly for KYC.
+- Requests to install remote-access or screen-sharing apps are a definitive red flag.
+- Sender numbers that are regular mobile numbers (10-digit) rather than the bank's
+  official 6-digit short code are suspicious.
+
+WHAT TO DO:
+- Never share OTP, CVV, PIN, or passwords with anyone, even if they claim to be from
+  your bank, RBI, or any government body.
+- Do not click on links in SMS or WhatsApp messages purporting to be from your bank.
+- Never install any app at the request of someone who called you.
+- If you want to verify whether your KYC is actually due, call the official number on
+  the back of your debit card or visit the branch in person.
+- If you have already shared details or transferred money, call your bank's fraud helpline
+  immediately to block your account and dispute the transaction.
+
+WHERE TO REPORT:
+- National Cybercrime Helpline: 1930 (call, available 24x7)
+- Report online at: cybercrime.gov.in
+- Inform your bank's fraud team immediately so they can attempt a transaction freeze.
+
+SOURCE: RBI Safe Banking awareness guidelines and I4C public advisories (summarized in
+own words).

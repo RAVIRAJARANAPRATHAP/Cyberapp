@@ -1,0 +1,6 @@
+{
+  "name": "CyberRakshak",
+  "description": "AI-powered cyber fraud awareness assistant for Indian citizens with RAG and Responsible AI safeguards",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

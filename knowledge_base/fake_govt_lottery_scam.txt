@@ -1,0 +1,57 @@
+SCAM TYPE: Fake Government Scheme / Lottery Scam
+
+HOW IT WORKS:
+Victims receive a call, SMS, or WhatsApp message claiming they have been selected as a
+beneficiary of a government scheme — such as PM Awas Yojana, PM Kisan, free gas
+connections, or a scholarship — or that they have won a lottery, prize draw, or lucky
+draw run by a telecom company like BSNL, Airtel, or Jio.
+
+The fraudster claims the prize or subsidy amount (often a large sum like Rs. 25 lakh or
+a brand new car) is ready for release, but the victim must first pay a small "processing
+fee," "registration charge," "GST deposit," or "insurance fee" to claim it. Each time
+the victim pays, a new fee or charge is invented to extract more money. The prize never
+materialises.
+
+In another variant, the victim is asked to click a link and fill in personal details
+(Aadhaar, PAN, bank account number) to "register for the scheme." This information is
+then used for identity theft or further fraud.
+
+TYPICAL SCRIPT USED:
+"Congratulations! You have been selected under PM Awas Yojana for Rs. 2.5 lakh. Your
+registration number is XYZ. To transfer the amount to your account you must first pay a
+Rs. 1,500 processing fee to this UPI ID."
+
+TYPICAL SMS TEXT:
+"You have won Rs. 25,00,000 in the Airtel Mega Lucky Draw. Your winning number: XXXXX.
+To claim, call: [10-digit mobile number]"
+
+RED FLAGS:
+- No legitimate government scheme ever asks you to pay any fee upfront to receive a
+  subsidy or benefit. Benefits are transferred directly to verified bank accounts without
+  any "processing charges."
+- Lotteries you did not enter cannot be won. An unsolicited "winning" notification is
+  always a scam.
+- Government communications for genuine schemes come through official channels (bank
+  branches, Gram Panchayat offices, official government portals) — not through random
+  WhatsApp messages or calls from private mobile numbers.
+- Urgency to pay within hours so "the prize does not lapse" is a pressure tactic.
+- Any scheme asking for Aadhaar + bank account + OTP together is seeking to steal your
+  identity and account access.
+
+WHAT TO DO:
+- Never pay any fee to receive money you have supposedly "won" or are "owed" — legitimate
+  winnings and benefits do not work this way.
+- Do not click links in prize-winning messages.
+- Verify any government scheme by calling the official PM helpline (1800-11-1555), your
+  bank branch, or checking the scheme's official government website directly.
+- Do not share Aadhaar, PAN, or bank OTP to anyone claiming to process a prize or
+  government benefit.
+
+WHERE TO REPORT:
+- National Cybercrime Helpline: 1930 (call, available 24x7)
+- Report online at: cybercrime.gov.in
+- You can also report to your local police station or the nearest post office (for
+  schemes that involved postal communication).
+
+SOURCE: I4C public advisories and cybercrime.gov.in awareness content on lottery and
+government-scheme fraud (summarized in own words).

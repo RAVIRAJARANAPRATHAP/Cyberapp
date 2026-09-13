@@ -1,0 +1,53 @@
+SCAM TYPE: Fake Relative-in-Trouble / Voice Cloning Scam
+
+HOW IT WORKS:
+The victim receives a phone call — often late at night or early morning to maximise
+panic — from someone claiming to be a relative (son, daughter, spouse) who is in serious
+trouble: arrested, in a road accident, hospitalised, or stranded abroad. The "relative"
+begs for an urgent money transfer to cover bail, medical bills, or a travel emergency.
+
+In more sophisticated versions of this scam, fraudsters use AI-based voice cloning tools
+to replicate the actual voice of the victim's relative using audio harvested from social
+media videos or voice notes. This makes the call sound completely genuine, as the victim
+hears what appears to be their own family member's voice crying or speaking in distress.
+
+After the initial "relative" call, a second caller pretending to be a police officer,
+doctor, or embassy official confirms the "emergency" and provides bank account or UPI
+details to send money to immediately.
+
+TYPICAL SCRIPT USED (voice-cloned version):
+[In a familiar voice, tearfully] "Maa/Papa, I'm in big trouble. I had an accident and
+the police have taken me. Please send Rs. 50,000 to this number right now, don't tell
+anyone, just hurry."
+
+RED FLAGS:
+- Unexpected urgent calls from relatives asking for money transfers should always be
+  verified independently before sending anything.
+- Even if the voice sounds exactly like your relative, hang up and call them back on
+  their known saved number to confirm.
+- Requests to keep the matter secret from other family members are a control tactic used
+  to prevent the victim from getting a second opinion.
+- Real embassies and consulates have official processes for helping stranded citizens —
+  they do not ask family members to wire money to unknown accounts.
+- The combination of emotional distress + urgency + secrecy is the defining pattern of
+  this scam.
+
+WHAT TO DO:
+- Stay calm. Hang up, then independently call your relative on the number already saved
+  in your phone. Do not use any number the caller provides.
+- Call another family member or friend who can separately verify whether the relative is
+  actually safe.
+- Do not transfer any money until you have physically or independently confirmed the
+  emergency is real.
+- If you cannot reach the relative, call the official number of the institution mentioned
+  (hospital, police station, embassy) — not the number given by the caller.
+- Remember: a real emergency does not disappear if you take 5 minutes to verify. Scammers
+  rely on you not verifying.
+
+WHERE TO REPORT:
+- National Cybercrime Helpline: 1930 (call, available 24x7)
+- Report online at: cybercrime.gov.in
+- Report to your nearest police station, especially if money was transferred.
+
+SOURCE: MHA / I4C advisories on voice cloning fraud and cybercrime.gov.in awareness
+section (summarized in own words).
