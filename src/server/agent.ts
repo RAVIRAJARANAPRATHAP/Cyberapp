@@ -12,7 +12,7 @@ import { softenOverconfidence, responseHasGrounding, ensureStatutoryGrounding } 
 import { inspectLink, LinkInspectorOutput } from './linkInspector.ts';
 
 export interface AgentResponse {
-  category: string;
+  category: ScamCategory;
   sources: string[];
   response: string;
   input_scrubbed: string;

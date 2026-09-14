@@ -67,35 +67,51 @@ export const LinkInspectorModal: React.FC<LinkInspectorModalProps> = ({
   if (!isOpen) return null;
 
   const handleInspect = async (targetUrl: string) => {
-    if (!targetUrl.trim()) return;
+    const trimmed = targetUrl.trim();
+    if (!trimmed) return;
     setLoading(true);
     setError(null);
     setResult(null);
 
     try {
-      const res = await fetch('/api/inspect-link', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ url: targetUrl.trim(), language }),
-      });
+      let inspectionData: any = null;
 
-      const resText = await res.text();
-      let data: any = {};
       try {
-        data = JSON.parse(resText);
-      } catch {
-        if (!res.ok) {
-          throw new Error(`Server returned HTTP ${res.status} (${res.statusText || 'Error'}). Please check backend configuration.`);
+        const res = await fetch('/api/inspect-link', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ url: trimmed, language }),
+        });
+
+        const resText = await res.text();
+        if (res.ok) {
+          try {
+            const data = JSON.parse(resText);
+            if (data && data.data) {
+              inspectionData = data.data;
+            }
+          } catch {
+            console.warn('[CyberRakshak] Non-JSON link inspect response, engaging local heuristic scanner');
+          }
         }
-        throw new Error('Received unexpected non-JSON response from server.');
+      } catch (netErr) {
+        console.warn('[CyberRakshak] Server unreachable for link inspection, using local heuristic scanner:', netErr);
       }
 
-      if (!res.ok) {
-        throw new Error(data.error || data.details || 'Inspection failed. Please try again.');
+      // If server could not inspect, use local heuristic threat inspector
+      if (!inspectionData) {
+        inspectionData = inspectLinkLocally(trimmed);
       }
-      setResult(data.data);
+
+      setResult(inspectionData);
     } catch (err: any) {
-      setError(err?.message || 'Failed to inspect the link. Please try again.');
+      console.error('[CyberRakshak] Link inspection error:', err);
+      // Fallback locally
+      try {
+        setResult(inspectLinkLocally(trimmed));
+      } catch {
+        setError('Failed to inspect the link. Please exercise caution and do not enter any credentials.');
+      }
     } finally {
       setLoading(false);
     }
