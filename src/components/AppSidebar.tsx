@@ -82,18 +82,18 @@ export const AppSidebar: React.FC<AppSidebarProps> = ({
 
       <aside
         id="app-sidebar"
-        className={`fixed inset-y-0 left-0 z-50 w-80 bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 p-6 flex flex-col justify-between overflow-y-auto transform transition-transform duration-200 ease-in-out lg:translate-x-0 lg:static ${
-          sidebarOpen ? 'translate-x-0' : '-translate-x-full'
+        className={`fixed inset-y-0 left-0 z-50 w-80 bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 p-6 flex flex-col justify-between overflow-y-auto transform transition-all duration-200 ease-in-out lg:static ${
+          sidebarOpen ? 'translate-x-0 opacity-100' : '-translate-x-full lg:hidden opacity-0'
         }`}
       >
         <div className="space-y-6">
           {/* Header */}
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center shadow-xs">
+              <div className="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center shadow-xs flex-shrink-0">
                 <Shield className="w-6 h-6" />
               </div>
-              <div>
+              <div className="min-w-0">
                 <h1 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white leading-none">
                   {t.appName}
                 </h1>
@@ -103,8 +103,9 @@ export const AppSidebar: React.FC<AppSidebarProps> = ({
             <button
               id="close-sidebar-btn"
               onClick={onClose}
-              className="w-10 h-10 min-w-[40px] min-h-[40px] flex items-center justify-center rounded-lg text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100 lg:hidden cursor-pointer"
+              className="w-10 h-10 min-w-[40px] min-h-[40px] flex items-center justify-center rounded-lg text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 cursor-pointer flex-shrink-0 transition-colors"
               aria-label="Close sidebar"
+              title="Close sidebar navigation"
             >
               <X className="w-5 h-5" />
             </button>

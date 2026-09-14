@@ -201,7 +201,8 @@ export default function App() {
       <main id="main-content-area" className="flex-1 flex flex-col min-w-0">
         {/* Top Header */}
         <AppHeader
-          onOpenSidebar={() => setSidebarOpen(true)}
+          onOpenSidebar={() => setSidebarOpen(prev => !prev)}
+          sidebarOpen={sidebarOpen}
           selectedLanguage={selectedLanguage}
           onSelectLanguage={setSelectedLanguage}
           darkMode={darkMode}

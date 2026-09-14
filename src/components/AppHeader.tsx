@@ -20,6 +20,7 @@ export const LANGUAGES: LanguageOption[] = [
 
 interface AppHeaderProps {
   onOpenSidebar: () => void;
+  sidebarOpen?: boolean;
   selectedLanguage: SupportedLanguage;
   onSelectLanguage: (lang: SupportedLanguage) => void;
   darkMode: boolean;
@@ -35,6 +36,7 @@ interface AppHeaderProps {
 
 export const AppHeader: React.FC<AppHeaderProps> = ({
   onOpenSidebar,
+  sidebarOpen,
   selectedLanguage,
   onSelectLanguage,
   darkMode,
@@ -49,8 +51,9 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
         <button
           id="open-sidebar-btn"
           onClick={onOpenSidebar}
-          className="w-10 h-10 min-w-[40px] min-h-[40px] flex items-center justify-center text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 lg:hidden cursor-pointer flex-shrink-0"
-          aria-label="Open sidebar"
+          className="w-10 h-10 min-w-[40px] min-h-[40px] flex items-center justify-center text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 cursor-pointer flex-shrink-0 transition-colors"
+          aria-label={sidebarOpen ? "Close navigation sidebar" : "Open navigation sidebar"}
+          title={sidebarOpen ? "Close navigation sidebar" : "Open navigation sidebar"}
         >
           <Menu className="w-5 h-5" />
         </button>
